@@ -1,0 +1,81 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>CLAIMBITS . ZIP</title>
+    <!-- Google Font Link for Icons only -->
+    <link rel="stylesheet" href="style.css" />
+    
+<style> .partition { width: 100%; height: 200px; /* Adjust height as needed */ border: 1px solid #ccc; margin-bottom: 20px; } iframe { width: 100%; height: 100%; border: none; } #downloadButton { display: block; margin: 20px auto; padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer; } 
+
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.download-btn{
+  outline: none;
+  border: none;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  padding: 16px 25px;
+  border-radius: 6px;
+  align-items: center;
+  white-space: nowrap;
+  background: #4A98F7;
+  transition: all 0.2s ease;
+}
+.download-btn:hover{
+  background: #2382f6;
+}
+.download-btn.timer{
+  color: #000;
+  background: none;
+  transition: none;
+  font-size: 1.6rem;
+  pointer-events: none;
+}
+.download-btn.timer b{
+  color: #4A98F7;
+  padding: 0 8px;
+}
+.download-btn .icon{
+  font-size: 2rem;
+}
+.download-btn .text{
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+
+</style> </head> <body> <div> <p style="text-align: center;">Scroll Down and click DOWNLOAD Button 1/3</p> </div> <div class="partition"> <iframe src="https://vaitotoo.net/4/6904296"></iframe> </div> <div class="partition"> <iframe src="https://psuftoum.com/4/7134200"></iframe> </div> <div class="partition"> <iframe src="https://fodsoack.com/4/7134199"></iframe> </div> <div class="partition"> <iframe src="https://feetheho.com/4/7134198"></iframe> </div> <div class="partition"> <iframe src="https://ookroush.com/4/7134197"></iframe> </div> <div class="partition"> <iframe src="https://zuhempih.com/4/7134196"></iframe> </div> <div class="partition"> <iframe src="https://chouthep.net/4/7134195"></iframe> </div> <div class="partition"> <iframe src="https://hoowuliz.com/4/7134194"></iframe> </div> <div class="partition"> <iframe src="https://greewepi.net/4/7134193"></iframe> </div> <div class="partition"> <iframe src="https://zeechoog.net/4/7134192"></iframe> </div> <div class="partition"> <iframe src="https://atpansagean.com/4/7134191"></iframe> </div> <div class="partition"> <iframe src="https://almstda.tv/4/7134024"></iframe> </div> <div class="partition"> <iframe src="https://woafoame.net/4/7134020"></iframe> </div> <div class="partition"> <iframe src="https://soocaips.com/4/7134017"></iframe> </div> <div class="partition"> <iframe src="https://dubzenom.com/4/7134019"></iframe> </div> <div class="partition"> <iframe src="https://chauckee.net/4/7134018"></iframe> </div> <div class="partition"> <iframe src="https://ewhareey.com/4/7134016"></iframe> </div> <div class="partition"> <iframe src="https://gloutchi.com/4/7134021"></iframe> </div> <div class="partition"> <iframe src="https://grapseex.com/4/7134022"></iframe> </div> <div class="partition"> <iframe src="https://doruffleton.com/4/7134023"></iframe> </div> <div class="partition"> <iframe src="https://doruffleton.com/4/7134023"></iframe> </div> <center><button class="download-btn" data-timer="30">
+      <span class="icon material-symbols-rounded"></span>
+      <span class="text">Download File 1/3</span>
+    </button> </center>
+    <script>const downloadBtn = document.querySelector(".download-btn");
+const fileLink = "claimbits2.html";
+
+const initTimer = () => {
+    if(downloadBtn.classList.contains("disable-timer")) {
+        return location.href = fileLink;
+    }
+    let timer = downloadBtn.dataset.timer;
+    downloadBtn.classList.add("timer");
+    downloadBtn.innerHTML = `Your download will begin in <b>${timer}</b> seconds`;
+    const initCounter = setInterval(() => {
+        if(timer > 0) {
+            timer--;
+            return downloadBtn.innerHTML = `download in <b>${timer}</b> seconds`;
+        }
+        clearInterval(initCounter);
+        location.href = fileLink;
+        downloadBtn.innerText = "Your file is downloading...";
+        setTimeout(() => {
+            downloadBtn.classList.replace("timer", "disable-timer");
+            downloadBtn.innerHTML = `<span class="icon material-symbols-rounded"></span>
+                                     <span class="text">Download Again</span>`;
+        }, 3000);
+    }, 1000);
+}
+
+downloadBtn.addEventListener("click", initTimer);</script></body> </html>
